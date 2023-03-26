@@ -1,0 +1,93 @@
+/* Variables */
+:root {
+  --primary-color: #24053E;
+  --secondary-color:#44FFA1;
+  --grey-color:#584D62;
+  --light-color:#FCF8FF;
+  --white-color:#fff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Manrope;
+  src: url(assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+
+}
+
+/* General Rules */
+
+html {
+  font-size:62.5%;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:  Fraunces;
+}
+
+h1 {
+  font-size:8rem;
+  line-height: 8rem;
+}
+
+h2 {
+  font-size:5.6rem;
+  line-height: 6.4rem;
+}
+
+h4,h5 {
+  font-size:3.2rem;
+  line-height: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding:0;
+  margin:0;
+  line-height:3.2rem;
+  font-size:1.8rem;
+  font-family: Manrope;
+  font-weight: 400;
+  background:#24053E;
+}
+
+.btn {
+  font-weight: bold;
+  border:none;
+  cursor: pointer;
+  transition: all .2s;
+
+}
+
+.btn-primary {
+  padding:1.3rem 2.4rem;
+  color:var(--primary-color);
+  background-color: var(--secondary-color);
+  border:1px solid transparent;
+
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border:1px solid var(--secondary-color)
+}
+
+.btn-secondary {
+  color:#fff;
+  border-bottom:2px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  color:var(--secondary-color);
+}
+
