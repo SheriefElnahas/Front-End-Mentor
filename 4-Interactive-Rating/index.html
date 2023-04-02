@@ -10,41 +10,31 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <main>
-      <article class="component">
-        <img src="./images/icon-star.svg" alt="decoration star image" class="component__img">
-        
+      <article class="component component--submit">
+        <img src="./images/icon-star.svg" alt="decoration star image" class="component__img--star" />
+
         <h1 class="component__heading">How did we do?</h1>
-        <p class="component__paragraph"> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering</p>
+        <p class="component__paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering</p>
         <div class="component__rating">
           <button class="component__rate">1</button>
           <button class="component__rate">2</button>
           <button class="component__rate">3</button>
-          <button class="component__rate selected">4</button>
+          <button class="component__rate">4</button>
           <button class="component__rate">5</button>
         </div>
-        <a class="component__btn">Submit</a>
+        <button class="component__btn">Submit</button>
+      </article>
+
+      <article class="component component--thanks">
+        <img src="./images/illustration-thank-you.svg" width="162" height="108" alt="decoration mobile & rate image" class="component__img--thanks" />
+        <p class="component__alert">You selected 4 out of 5</p>
+        <h1 class="component__heading">Thank you!</h1>
+        <p class="component__paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
       </article>
     </main>
-    <!-- Rating state start -->
-
-    <!-- Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit -->
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
-  -->
-    <!-- Thank you state end -->
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   </body>
 </html>
