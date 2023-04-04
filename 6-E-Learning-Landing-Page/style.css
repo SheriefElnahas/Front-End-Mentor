@@ -13,10 +13,10 @@
   --light-blue: hsl(234, 25%, 52%);
   --dark-blue: hsl(233, 54%, 16%);
   --light-gray: hsl(232, 10%, 56%);
-  ---red: hsl(341, 92%, 62%);
+  --red: hsl(341, 92%, 62%);
   --light-red: hsl(341, 100%, 83%);
   --white: hsl(0, 0%, 100%);
-  --orange-gradient: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  --orange-gradient: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
   --purple-gradient: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
 }
 
@@ -27,6 +27,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   background: var(--white);
+  overflow-x: hidden;
 }
 
 button,
@@ -44,7 +45,7 @@ h6 {
 h1 {
   font-size: 56px;
   line-height: 70px;
-  color:var(--dark-blue);
+  color: var(--dark-blue);
 }
 h2 {
   font-size: 40px;
@@ -102,9 +103,17 @@ img {
 
 /**** || NAVBAR || ****/
 main {
+  padding: 0 1rem;
+}
+
+.container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1rem;
+}
+
+header {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -114,19 +123,72 @@ main {
   justify-content: space-between;
 }
 
-.hero {
+.container--hero {
   display: flex;
   align-items: center;
 }
 
-.hero__left {
+.hero__right {
   position: relative;
   top: -117px;
   left: 290px;
+  overflow-x: hidden;
 }
 
 .hero__paragraph {
-  margin:29px 0 30px 0;
-  width:70%;
-  color:var(--light-gray);
+  margin: 29px 0 30px 0;
+  width: 70%;
+  color: var(--light-gray);
+}
+
+.features {
+  padding-bottom: 3rem;
+  background: linear-gradient(hsl(234, 100%, 100%), hsl(234, 100%, 97%));
+}
+.features__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px 30px;
+}
+
+.card .card--highlight {
+  background: var(--orange-gradient);
+  color: #fff;
+}
+.card--highlight h3 {
+  width: 70%;
+}
+
+.card {
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  background: var(--white);
+}
+.card__icon {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -35px;
+}
+
+.card__heading {
+  margin: 30px 0 24px;
+}
+
+.card__paragraph {
+  color: var(--light-gray);
+  width: 95%;
+  margin-bottom: 24px;
+}
+
+.card__link {
+  color: var(--red);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card__link:hover {
+  color: var(--light-red);
 }
