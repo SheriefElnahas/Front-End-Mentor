@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/*********************************  
+          || Variables || 
+**********************************/
+:root {
+  /* ## Colors ## */
+  --color-green: 177, 68%, 64%;
+  --color-red: 12, 95%, 65%;
+  --color-orange: 33, 100%, 70%;
+  --light-white: 20, 33%, 98%;
+  --color-black: 244, 23%, 12%;
+  --color-white: #fff;
+
+  /* ## Typography ## */
+  --h1-size: 8.8rem;
+  --h1-height: 8.8rem;
+  --h1-spacing: -1px;
+
+  --h2-size: 4rem;
+  --h2-height: 5.2rem;
+
+  --large-body-text-size: 2rem;
+  --large-body-text-height: 3.4rem;
+
+  --small-body-text-size: 1.6rem;
+  --small-body-text-height: 2.6rem;
+}
+
+/*********************************  
+          || RESET  || 
+**********************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  color: hsl(--color-black);
+  background: orange;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*********************************  
+          || Utility Classes  || 
+**********************************/
+  /* ## Buttons ## */
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.9em 4.8em;
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+
+.btn-ios {
+  color: var(--color-white);
+  background: hsl(var(--color-black));
+  padding: 0.9em 4.8em;
+}
+
+.btn-ios:hover {
+  background: hsl(var(--color-green));
+}
+.btn__icon--ios {
+  margin: 0 8px 6px 0;
+}
+
+.btn-andriod {
+  color: hsl(var(--color-black));
+  background: var(--color-white);
+  padding: 0.9em 3.7em;
+}
+
+.btn-andriod:hover {
+  background: hsl(var(--color-orange));
+}
+.btn__icon--andriod {
+  margin: 0 8px 3px 0;
+}
+
+.btn__icon--ios,
+.btn__icon--andriod {
+  width: 17px;
+  height: 20px;
+}
+
+  /* ## Typography ## */
+.bold {
+  font-weight: bold;
+}
