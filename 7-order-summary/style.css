@@ -49,6 +49,10 @@ img {
   z-index: -1;
 }
 
+.pattern__desktop {
+  display:none;
+}
+
 .card__img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -111,8 +115,13 @@ img {
   color:var(--bg-bright-blue);
   text-decoration: none;
   border-bottom:2px solid var(--bg-bright-blue);
+  transition: border, color 0.2s linear;
 }
 
+.plan__link:hover {
+  border-bottom: 2px solid transparent;
+  color:hsl(245, 75%, 62%);
+}
 .buttons__container {
   display:flex;
   flex-direction: column;
@@ -124,7 +133,7 @@ img {
   font-family: inherit;
   border:none;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  transition: background, color 0.2s ease-in-out;
   font-weight: 900;
   font-size:15px;
 }
@@ -139,7 +148,7 @@ img {
 }
 
 .btn--payment:hover {
- background: hsl(245, 75%, 42%);
+ background: hsl(245, 75%, 62%);
 }
 
 .btn--cancel {
@@ -148,5 +157,37 @@ img {
 }
 
 .btn--cancel:hover {
-  background:hsl(224, 23%, 65%);
+  color:var(--dark-blue);
+}
+
+
+@media (min-width: 700px) {
+  .pattern__mobile {
+    display:none;
+  }
+
+  .pattern__desktop {
+    position: absolute;
+    z-index:-1;
+    top:-120px;
+    left:0;
+  }
+
+  .card {
+    width:450px;
+  }
+  .card__content {
+    padding:2rem 3.8rem;
+  }
+  .card__heading {
+    font-size:28px;
+  }
+
+  .plan__heading {
+    font-size:16px;
+  }
+
+  .btn--payment {
+    padding:0.9rem 5.5rem;
+  }
 }
