@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  /* | Background Colors |  */
+  --bg-pale-blue: hsl(225, 100%, 94%);
+  --bg-bright-blue:hsl(245, 75%, 52%);
+
+  /* | Text Colors | */
+  --very-pale-blue:hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue:hsl(223, 47%, 23%);
+
+}
+/* || RESET || */
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES || */
+body {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  background: var(--very-dark-blue-main-bg);
+  display: grid;
+  place-content: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* .card {
+  width: 350px;
+  background-color: var(--very-dark-blue-card-bg);
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin: 3rem 1rem;
+} */
