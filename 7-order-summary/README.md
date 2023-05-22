@@ -1,4 +1,4 @@
-# FrontEnd Mentor : Interactive Rating
+# FrontEnd Mentor : Order Summary
 
 ## This Project Was Aimed To Practice
 
