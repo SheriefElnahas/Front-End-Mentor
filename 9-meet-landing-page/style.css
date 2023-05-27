@@ -34,9 +34,14 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 1.8rem;
   line-height: 2.6rem;
-  background: #333;
+  background: hsl(var(--light-white));
+  color:hsl(var(--light-gray));
 }
 
+
+h1,h2,h3 {
+  color:hsl(var(--main-black));
+}
 
 button {
   cursor: pointer;
@@ -46,14 +51,15 @@ button {
 }
 
 .btn {
-  padding:1.1rem 3rem;
+  padding:1.4rem 2.5rem;
   color:hsl(var(--light-white));
-  border-radius: 15px;
+  border-radius: 20px;
   font-weight: bold;
 }
 
 .btn-1 {
-  background:hsl(var(--light-green))
+  background:hsl(var(--light-green));
+  margin-right:1.6rem;
 }
 
 .btn-1 .btn-highlight {
@@ -81,4 +87,41 @@ button {
 }
 .btn-2:hover .btn-highlight {
   color:hsl(var(--light-cyan));
+}
+
+
+/* Header */
+.header {
+
+  text-align: center;
+  position: relative;
+}
+
+.header__img {
+  position: absolute;
+}
+.img--left {
+  top:20px;
+  left:-30px;
+}
+.img--right {
+  top:20px;
+  right:-30px;
+}
+.header__logo {
+
+  margin:5rem 0 8rem;
+}
+
+.header__title {
+  font-size:clamp(4rem, 1rem + 3vw, 6.4rem);
+  line-height: var(--h1-height);
+  width:30%;
+
+  margin-inline: auto;
+}
+
+.header__text {
+ width:36%;
+ margin:3rem auto;
 }
