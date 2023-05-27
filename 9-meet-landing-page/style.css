@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+  /* ## Colors ## */
+  --light-green: 192, 37%, 48%;
+  --light-cyan: 192, 90%, 77%;
+  --dark-pink: 268, 34%, 53%;
+  --light-pink: 268, 100%, 86%;
+  --main-black: 240, 21%, 20%;
+  --light-gray: 240, 10%, 57%;
+
+
+  --light-white: 0, 0%, 98%;
+
+  /* ## Tpyography ##*/
+  --h1-height: 6.4rem;
+  --h2-height: 4.4rem;
+
+  --overline-height: 2.6rem;
+  --overline-spacing: 4px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +31,54 @@
 }
 
 body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   background: #333;
-  line-height: 1.5;
-  
+}
+
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border:none;
+  transition: all 0.2s ease-in;
+}
+
+.btn {
+  padding:1.1rem 3rem;
+  color:hsl(var(--light-white));
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.btn-1 {
+  background:hsl(var(--light-green))
+}
+
+.btn-1 .btn-highlight {
+  color:hsl(var(--light-cyan));
+}
+
+
+.btn-1:hover {
+  background:hsl(192,54%,64%);
+}
+.btn-1:hover .btn-highlight {
+  color:hsl(var(--light-cyan));
+}
+
+
+.btn-2 {
+  background:hsl(var(--dark-pink))
+}
+.btn-2 .btn-highlight {
+  color:hsl(var(--light-pink));
+}
+
+.btn-2:hover {
+  background:hsl(268, 55%,71%);
+}
+.btn-2:hover .btn-highlight {
+  color:hsl(var(--light-cyan));
 }
