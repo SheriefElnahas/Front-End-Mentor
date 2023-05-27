@@ -49,7 +49,8 @@ button {
   display: flex;
   flex-direction: column;
   margin: 4rem 0;
-  padding:0 1rem;
+  padding: 0 1rem;
+
 }
 
 .card {
@@ -79,22 +80,18 @@ button {
   padding: 1.3rem 3rem;
   border-radius: 15px;
   background: var(--very-light-gray);
-  border:2px solid transparent;
+  border: 2px solid transparent;
 }
 
 .card__btn:hover {
-  background:transparent;
-  color:#fff;
-  border:2px solid #fff;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .btn--sedan {
   color: var(--bright-orange);
 }
-/* .card__btn:hover {
-  background: hsl(0, 0%, 0%);
-  color: #fff;
-} */
 
 .card--suvs {
   background: var(--dark-cyan);
@@ -103,19 +100,28 @@ button {
   color: var(--dark-cyan);
 }
 
-
 .card--luxury {
-  background:var(--very-dark-cyan);
+  background: var(--very-dark-cyan);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .btn--luxury {
-  color:var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
 }
 
-@media(min-width:70em) {
+@media (min-width: 70em) {
   .cards {
     flex-direction: row;
+  }
+
+  .card--sedan {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  .card--luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
   }
 }
