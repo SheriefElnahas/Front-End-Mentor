@@ -54,7 +54,7 @@ button {
 
 .btn--highlight {
   transition: color 0.2s ease-in;
-  margin-left:3px;
+  margin-left: 3px;
 }
 .btn {
   padding: 1.4rem 2.5rem;
@@ -69,34 +69,29 @@ button {
 }
 
 .btn-1 .btn--highlight {
-  color: hsl(var(--light-cyan));
-  
+  color: hsl(192, 90%, 80%);
 }
 
 .btn-1:hover {
   background: hsl(192, 54%, 64%);
-  color:black;
+  color: black;
 }
 .btn-1:hover .btn--highlight {
-
-  color:#333;
+  color: #333;
 }
 
 .btn-2 {
   background: hsl(var(--dark-pink));
 }
 .btn-2 .btn--highlight {
-  color: hsl(268, 100%, 90%)
-  
+  color: hsl(268, 100%, 90%);
 }
 
 .btn-2:hover {
-  background: hsl(268, 55%, 41%);
-
+  background: hsl(268, 55%, 31%);
 }
 .btn-2:hover .btn--highlight {
   color: hsl(var(--light-cyan));
-
 }
 
 .number {
