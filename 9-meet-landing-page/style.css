@@ -51,14 +51,6 @@ button {
   transition: all 0.2s ease-in;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-/* img {
-  width:100%;
-} */
-
 .btn {
   padding: 1.4rem 2.5rem;
   color: hsl(var(--light-white));
@@ -71,28 +63,28 @@ button {
   margin-right: 1.6rem;
 }
 
-.btn-1 .btn-highlight {
+.btn-1 .btn--highlight {
   color: hsl(var(--light-cyan));
 }
 
 .btn-1:hover {
   background: hsl(192, 54%, 64%);
 }
-.btn-1:hover .btn-highlight {
+.btn-1:hover .btn--highlight {
   color: hsl(var(--light-cyan));
 }
 
 .btn-2 {
   background: hsl(var(--dark-pink));
 }
-.btn-2 .btn-highlight {
+.btn-2 .btn--highlight {
   color: hsl(var(--light-pink));
 }
 
 .btn-2:hover {
   background: hsl(268, 55%, 71%);
 }
-.btn-2:hover .btn-highlight {
+.btn-2:hover .btn--highlight {
   color: hsl(var(--light-cyan));
 }
 
@@ -208,6 +200,32 @@ button {
   margin-top: 7rem;
 }
 
+/* Footer */
+.footer {
+  margin-top: 12rem;
+  background: linear-gradient(hsla(var(--light-green), 0.9), hsla(var(--light-green), 0.9)), url('./assets/desktop/image-footer.jpg');
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 16rem;
+  color: hsl(var(--light-white));
+  text-align: left;
+}
+
+.footer__heading {
+  color: hsl(var(--light-white));
+
+
+  font-size: clamp(3rem, 1rem + 3vw, 4rem);
+  line-height: clamp(1rem, 1rem + 3vw, 4.5rem);
+  width: 30%;
+
+}
+.footer__text {
+  width: 30%;
+
+}
 @media (max-width: 1300px) {
   .meeting {
     margin-inline: 3rem;
@@ -256,7 +274,6 @@ button {
   .meeting {
     margin-inline: 3rem;
   }
-
 
   .meeting__heading {
     width: 60%;
