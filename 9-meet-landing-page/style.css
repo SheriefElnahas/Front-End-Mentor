@@ -202,9 +202,10 @@ button {
 
 /* Footer */
 .footer {
-  margin-top: 12rem;
+  margin-top: 10rem;
   background: linear-gradient(hsla(var(--light-green), 0.9), hsla(var(--light-green), 0.9)), url('./assets/desktop/image-footer.jpg');
-  height: 30rem;
+  background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -215,17 +216,17 @@ button {
 
 .footer__heading {
   color: hsl(var(--light-white));
+  font-size: clamp(3.2rem, 1rem + 3vw, 4rem);
 
+  line-height: 1.2;
 
-  font-size: clamp(3rem, 1rem + 3vw, 4rem);
-  line-height: clamp(1rem, 1rem + 3vw, 4.5rem);
-  width: 30%;
-
+  width: 40%;
 }
 .footer__text {
-  width: 30%;
-
+  width: 40%;
+  font-size: 18px;
 }
+
 @media (max-width: 1300px) {
   .meeting {
     margin-inline: 3rem;
@@ -234,13 +235,11 @@ button {
   .meeting__overline {
     margin-top: 4rem;
   }
-}
-
-@media (max-width: 900px) {
-  .meeting__container {
-    grid-template-columns: repeat(2, 1fr);
+  .footer {
+    padding: 10rem;
   }
 }
+
 @media (max-width: 1000px) {
   .header {
     margin-bottom: 17rem;
@@ -269,6 +268,30 @@ button {
   .header__text {
     width: 60%;
   }
+
+  .footer {
+    background: linear-gradient(hsla(var(--light-green), 0.9), hsla(var(--light-green), 0.9)), url('./assets/tablet/image-footer.jpg');
+    flex-direction: column;
+
+    text-align: center;
+    margin-top: 6rem;
+    padding: 10rem 6rem 8rem;
+  }
+
+  .footer__heading {
+    width: 48%;
+  }
+  .footer__text {
+    width: 80%;
+
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .meeting__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 700px) {
   .meeting {
@@ -277,6 +300,21 @@ button {
 
   .meeting__heading {
     width: 60%;
+  }
+
+  .footer {
+    background: linear-gradient(hsla(var(--light-green), 0.9), hsla(var(--light-green), 0.9)), url('./assets/mobile/image-footer.jpg');
+    background-position: center top;
+    padding: 10rem 6rem 5rem;
+  }
+
+  .footer__heading {
+    width: 90%;
+  }
+  .footer__text {
+    width: 100%;
+
+    margin: 5rem 0;
   }
 }
 @media (max-width: 500px) {
