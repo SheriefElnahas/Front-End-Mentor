@@ -36,11 +36,11 @@ body {
   background: hsl(var(--light-white));
   color: hsl(var(--light-gray));
   overflow-x: hidden;
+  text-align: center;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: hsl(var(--main-black));
 }
 
@@ -93,10 +93,38 @@ img {
   color: hsl(var(--light-cyan));
 }
 
+.number {
+  color: hsl(var(--light-gray));
+  padding: 1.6rem 2rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid hsla(var(--light-gray), 0.7);
+  font-weight: bold;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.number::before {
+  content: '';
+  position: absolute;
+  top: -89px;
+  left: 27px;
+  height: 88px;
+  background: hsla(var(--light-gray), 0.7);
+  width: 2px;
+}
+
+.overline {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 4px;
+  color: hsl(var(--light-green));
+}
 /* Header */
 .header {
-  text-align: center;
   position: relative;
+  margin-bottom: 30rem;
 }
 
 .header__logo {
@@ -127,18 +155,51 @@ img {
 
   margin-inline: auto;
 }
-
+.body--text {
+  font-size: clamp(1.4rem, 0.5rem + 1vw, 1.8rem);
+  width: 36%;
+}
 .header__text {
   font-size: clamp(1.4rem, 0.5rem + 1vw, 1.8rem);
   width: 36%;
   margin: 3rem auto;
 }
 
+/* Meeting */
+.meeting {
+  margin: 6rem 16.5rem 3rem;
+}
+.meeting__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.meeting__img {
+  border-radius: 15px;
+  margin-bottom: 8rem;
+}
+.meeting__heading {
+  margin: 1.6rem 0 3.2rem;
+}
+
+.meeting__heading {
+  font-size: 4rem;
+
+  width: 38%;
+  line-height: 4.4rem;
+
+  margin-inline: auto;
+}
+
+.meeting__text {
+  width: 45%;
+  margin-inline: auto;
+}
+
 @media (max-width: 1000px) {
   .header__logo {
-
-    padding-bottom:2.5rem;
-
+    padding-bottom: 2.5rem;
   }
 
   .img--desktop {
@@ -159,24 +220,22 @@ img {
   }
 
   .header__text {
-    width:60%;
+    width: 60%;
   }
 }
 
-
-@media(max-width:500px ) {
+@media (max-width: 500px) {
   .header__title {
     margin-top: 5rem;
-    width:80%;
+    width: 80%;
     line-height: 4rem;
-
   }
   .header__text {
-    width:65%;
+    width: 65%;
   }
 
   .btn {
-    display:block;
-    margin:0 auto 1.5rem;
+    display: block;
+    margin: 0 auto 1.5rem;
   }
 }
