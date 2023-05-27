@@ -17,10 +17,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
   color: #fff;
   font-family: 'Lexend Deca', sans-serif;
   line-height: 1.5;
+  font-size:1.5rem;
+  display:grid;
+  place-content: center;
+
 }
 
 h1,
@@ -34,4 +41,47 @@ button {
   font-family: inherit;
   cursor: pointer;
   border:none;
+  transition: all 0.2s ease-in;
+}
+
+/* Cards */
+.cards {
+  display:flex;
+  flex-direction: column;
+  margin:4rem 0 ;
+}
+
+.card {
+  width:32.7rem;
+  padding:4.9rem;
+}
+
+.card--sedan {
+  background:var(--bright-orange);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+.card__heading {
+  padding:3.5rem 0 2.5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.card__text {
+  color:var(--text-white);
+  line-height: 2.5rem;
+  padding-bottom:2.5rem;
+}
+
+.card__btn {
+  padding:1.3rem 3rem;
+  border-radius: 15px;
+  background:var(--very-light-gray);
+  color:var(--bright-orange);
+}
+
+.card__btn:hover {
+  background:hsl(0, 0%, 0%);
+  color:#fff;
 }
