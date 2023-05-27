@@ -27,6 +27,7 @@ body {
   font-size: 1.5rem;
   display: grid;
   place-content: center;
+  min-height: 100vh;
 }
 
 h1,
@@ -78,15 +79,22 @@ button {
   padding: 1.3rem 3rem;
   border-radius: 15px;
   background: var(--very-light-gray);
+  border:2px solid transparent;
+}
+
+.card__btn:hover {
+  background:transparent;
+  color:#fff;
+  border:2px solid #fff;
 }
 
 .btn--sedan {
   color: var(--bright-orange);
 }
-.card__btn:hover {
+/* .card__btn:hover {
   background: hsl(0, 0%, 0%);
   color: #fff;
-}
+} */
 
 .card--suvs {
   background: var(--dark-cyan);
@@ -104,4 +112,10 @@ button {
 
 .btn--luxury {
   color:var(--very-dark-cyan);
+}
+
+@media(min-width:70em) {
+  .cards {
+    flex-direction: row;
+  }
 }
