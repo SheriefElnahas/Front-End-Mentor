@@ -93,19 +93,20 @@ button {
   padding: 1.6rem 2rem;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid hsla(var(--light-gray), 0.7);
+  border: 1px solid hsla(var(--light-gray), 0.7);
   font-weight: bold;
   position: relative;
   font-size: 1.6rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.09);
 }
 
 .number::before {
   content: '';
   position: absolute;
   top: -89px;
-  left: 27px;
+  left: 28px;
   height: 88px;
-  background: hsla(var(--light-gray), 0.7);
+  background: hsla(var(--light-gray), 0.5);
   width: 2px;
 }
 
@@ -202,7 +203,7 @@ button {
 
 /* Footer */
 .footer {
-  margin-top: 10rem;
+  margin-top: 14rem;
   background: linear-gradient(hsla(var(--light-green), 0.9), hsla(var(--light-green), 0.9)), url('./assets/desktop/image-footer.jpg');
   background-size: cover;
 
@@ -212,8 +213,17 @@ button {
   padding: 10rem 16rem;
   color: hsl(var(--light-white));
   text-align: left;
+  position: relative;
 }
-
+.footer--divider {
+  position: absolute;
+  top: -15px;
+  left: 48%;
+  z-index: 10;
+}
+.footer--divider .number {
+  background: #fff;
+}
 .footer__heading {
   color: hsl(var(--light-white));
   font-size: clamp(3.2rem, 1rem + 3vw, 4rem);
@@ -274,7 +284,7 @@ button {
     flex-direction: column;
 
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 15rem;
     padding: 10rem 6rem 8rem;
   }
 
