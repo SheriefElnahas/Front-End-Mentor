@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;500;700&display=swap');
 
 :root {
   --light-green: hsl(157, 74%, 62%);
@@ -20,12 +20,13 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #000;
+  background: var(--dark-black);
   color: #fff;
   line-height: 2.8rem;
   font-size: 1.8rem;
   font-family: 'Chivo', sans-serif;
   font-weight: light;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -35,11 +36,55 @@ h1 {
   font-weight: light;
 }
 
+/* Hero */
+.hero {
+  padding: 5rem 0 13rem 16.5rem;
+}
+
+.hero__image {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  width: 88.8rem;
+  height: 58rem;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero__pattern {
+  position: absolute;
+  top: calc(4rem + 58rem);
+  right: 0;
+}
+
+.hero__card {
+  width: 723px;
+
+  background: var(--dark-black);
+  box-shadow: 0px 0px 5px 5px hsla(157, 74%, 62%,0.8);
+  margin-top: 10rem;
+}
+
+.card__heading {
+  font-weight: 100;
+
+  padding: 5rem 5.8rem 2.4rem 0;
+  font-size: clamp(2.6rem, 4rem + 1vw, 5.2rem);
+}
+.card__heading--highlight {
+  color: var(--light-green);
+}
+
+.card__text {
+  width: 62%;
+  color: var(--gray);
+  font-weight: 100;
+}
+
 .form {
-  margin: 2rem;
-  display:flex;
+  display: flex;
   align-items: center;
   position: relative;
+  margin: 4rem 0 6.4rem;
 }
 .form__input {
   background: var(--light-black);
@@ -50,7 +95,7 @@ h1 {
   font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
-  height:5.6rem;
+  height: 5.6rem;
 }
 .form__input::placeholder {
   color: hsl(0, 0%, 59%);
@@ -72,18 +117,25 @@ h1 {
   font-family: inherit;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-left:-155px;
+  margin-left: -155px;
   transition: background 0.2s ease-in;
 }
 .form__btn:hover {
-  background:hsl(157, 100%, 85%);
+  background: hsl(157, 100%, 85%);
 }
 
 .form__error {
   position: absolute;
-  color:hsl(0, 96%, 61%);
-  bottom:-30px;
-  left:20px;
+  color: hsl(0, 96%, 61%);
+  bottom: -30px;
+  left: 20px;
   font-size: 1.2rem;
-  display:none;
+  display: none;
+}
+
+.card__logos {
+  display: flex;
+  align-items: center;
+  padding-right: 15rem;
+  justify-content: space-between;
 }
