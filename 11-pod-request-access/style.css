@@ -55,7 +55,8 @@ body {
 
   background: var(--dark-black);
   box-shadow: 0px 0px 5px 5px hsla(157, 74%, 62%, 0.8);
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding: 0 0 2rem 2rem;
 }
 
 .card__heading {
@@ -80,7 +81,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 4rem 0 6.4rem;
+  margin: 4rem 0 4rem;
 }
 .form__input {
   background: var(--light-black);
@@ -230,8 +231,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 6rem;
-    margin: 0 auto;
+  
+    row-gap: 5rem;
+    column-gap: 8rem;
+    margin: 2rem auto;
   }
   .form {
     margin-top: 4.8rem;
@@ -247,7 +250,13 @@ body {
     width:41.5rem;
     margin:2rem auto;
     padding: 1.8rem 2.4rem;
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
+}
+
+@media(max-width:650px) {
+  .card__logos {
+    margin: 0 auto;
+  }
 }
