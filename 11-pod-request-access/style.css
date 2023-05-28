@@ -26,14 +26,7 @@ body {
   font-size: 1.8rem;
   font-family: 'Chivo', sans-serif;
   font-weight: light;
-  overflow-y: hidden;
-}
-
-h1 {
-  font-size: 5.2rem;
-  line-height: 6.2rem;
-  text-transform: uppercase;
-  font-weight: light;
+  overflow: hidden;
 }
 
 /* Hero */
@@ -49,6 +42,7 @@ h1 {
   height: 58rem;
   object-fit: cover;
   z-index: -1;
+  width: 60%;
 }
 .hero__pattern {
   position: absolute;
@@ -57,10 +51,10 @@ h1 {
 }
 
 .hero__card {
-  width: 723px;
+  width: 700px;
 
   background: var(--dark-black);
-  box-shadow: 0px 0px 5px 5px hsla(157, 74%, 62%,0.8);
+  box-shadow: 0px 0px 5px 5px hsla(157, 74%, 62%, 0.8);
   margin-top: 10rem;
 }
 
@@ -68,7 +62,9 @@ h1 {
   font-weight: 100;
 
   padding: 5rem 5.8rem 2.4rem 0;
-  font-size: clamp(2.6rem, 4rem + 1vw, 5.2rem);
+  font-size: clamp(2.6rem, 3.5rem + 1vw, 5.2rem);
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 .card__heading--highlight {
   color: var(--light-green);
@@ -138,4 +134,42 @@ h1 {
   align-items: center;
   padding-right: 15rem;
   justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+  .hero {
+    padding: 5rem 0 13rem 5rem;
+  }
+  .hero__card {
+    width: 680px;
+
+    width:600px;
+    margin-top: 7rem;
+  }
+
+  .card__heading {
+    padding: 5rem 1rem 2.4rem 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .hero {
+    padding: 3rem 0 13rem 5rem;
+  }
+  .hero__pattern {
+    display:none;
+  }
+  picture .hero__image {
+    position: absolute;
+    top: 0;
+    object-position: top center;
+    right: -20px;
+    width: 60%;
+  }
+  .card__text {
+    width:80%;
+  }
+  .card__logos {
+    padding-right:5rem;
+  }
 }

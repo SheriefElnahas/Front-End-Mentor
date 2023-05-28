@@ -14,7 +14,13 @@
   <body>
     <main class="hero">
       <img src="assets/desktop/logo.svg" alt="" class="hero__logo" />
-      <img src="assets/desktop/image-host.webp" alt="singer wearing headphones and singing in the mic" class="hero__image" width="888" height="580" />
+      <picture>
+        <source media="(max-width: 1050px)" srcset="./assets/tablet/image-host.jpg" class="hero__image--tablet" />
+        <source media="(max-width: 700px)" srcset="./assets/mobile/image-host.jpg" class="hero__image" />
+        <img src="assets/desktop/image-host.webp" alt="singer wearing headphones and singing in the mic" class="hero__image" width="888" height="580" />
+      </picture>
+
+      <!-- <img src="assets/desktop/image-host.webp" alt="singer wearing headphones and singing in the mic" class="hero__image" width="888" height="580" /> -->
       <img src="assets/desktop/bg-pattern-dots.svg" alt="" class="hero__pattern" role="none" />
       <article class="hero__card">
         <h1 class="card__heading"><span class="card__heading--highlight">Publish your podcasts</span> everywhere</h1>
