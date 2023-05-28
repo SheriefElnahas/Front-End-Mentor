@@ -1,11 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&display=swap');
+
+:root {
+  --light-green: hsl(157, 74%, 62%);
+  --light-black: hsl(225, 26%, 23%);
+  --dark-black: hsl(224, 35%, 11%);
+
+  --main-white: hsl(0, 0%, 100%);
+  --light-gray: hsl(225, 21%, 45%);
+  --gray: hsl(225, 40%, 83%);
+}
+
 * {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
-  background:#333;
-  color:#fff;
-  line-height: 1.5;
+  background: #000;
+  color: #fff;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+  font-family: 'Chivo', sans-serif;
+  font-weight: light;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  text-transform: uppercase;
+  font-weight: light;
+}
+
+.form {
+  margin: 2rem;
+  display:flex;
+  align-items: center;
+  position: relative;
+}
+.form__input {
+  background: var(--light-black);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 300px;
+  width: 42rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  height:5.6rem;
+}
+.form__input::placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.3rem;
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 2px solid hsl(0, 0%, 59%);
+}
+
+.form__btn {
+  background: var(--light-green);
+  color: var(--dark-black);
+  padding: 1.4rem 2.4rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left:-155px;
+  transition: background 0.2s ease-in;
+}
+.form__btn:hover {
+  background:hsl(157, 100%, 85%);
+}
+
+.form__error {
+  position: absolute;
+  color:hsl(0, 96%, 61%);
+  bottom:-30px;
+  left:20px;
+  font-size: 1.2rem;
+  display:none;
 }
