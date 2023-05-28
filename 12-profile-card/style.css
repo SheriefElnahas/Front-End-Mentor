@@ -22,4 +22,5 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   line-height: 1.5;
+  background:var(--dark-cyan);
 }
