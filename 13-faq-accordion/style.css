@@ -50,14 +50,23 @@ body {
 
 .faq__img {
   position: absolute;
-  top: -150px;
+  top: -110px;
+  left:50px;
+  width:23.7rem;
+  height:18rem;
+  object-fit: cover;
+}
+.faq__pattern {
+  position: absolute;
+  top:-5px;
+  left:44px;
 }
 
 .faq__heading {
   text-align: center;
   font-size: 3.2rem;
 
-  margin: 10rem 0 3.8rem;
+  margin: 11.5rem 0 2.8rem;
 }
 
 .faq__accordion {
@@ -84,11 +93,10 @@ body {
 .fa-angle-down {
   top: 15px;
   right: 0;
-
 }
 .accordion__heading {
   font-size: 1.3rem;
-  margin:0.5rem 0 1rem;
+  margin: 0rem 0 1rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -101,15 +109,14 @@ body {
   display: none;
 }
 
-
 .open {
   font-weight: bold;
 }
 
 .show {
-  display:block;
+  display: block;
 }
 
 .hide {
-  display:none;
+  display: none;
 }
