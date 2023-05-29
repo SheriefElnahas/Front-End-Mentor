@@ -31,9 +31,8 @@ body {
   font-size: 1.2rem;
 
   font-family: 'Kumbh Sans', sans-serif;
-  display: grid;
-  place-content: center;
   min-height: 100vh;
+  margin-top: 14.8rem;
 }
 
 /* FAQ */
@@ -44,22 +43,39 @@ body {
   border-radius: 23px;
   position: relative;
   padding: 1rem 2.4rem 4rem;
-
-  margin: 20rem 0 10rem;
+  margin-inline: auto;
 }
 
 .faq__img {
   position: absolute;
+}
+.img--mobile {
   top: -110px;
-  left:50px;
-  width:23.7rem;
-  height:18rem;
+  left: 50px;
+  width: 23.7rem;
+  height: 18rem;
   object-fit: cover;
 }
+
+.img--desktop {
+  display: none;
+}
+
 .faq__pattern {
   position: absolute;
-  top:-5px;
-  left:44px;
+}
+
+.pattern--mobile {
+  top: -5px;
+  left: 44px;
+}
+.pattern--desktop {
+  top: 0;
+  left: 0;
+  display: none;
+}
+.pattern--box {
+  display: none;
 }
 
 .faq__heading {
@@ -119,4 +135,58 @@ body {
 
 .hide {
   display: none;
+}
+
+@media (min-width: 950px) {
+  .faq {
+    width: 92rem;
+    margin-inline: auto;
+    /* overflow: hidden; */
+    padding: 0 2.4rem 4rem 0;
+  }
+  .faq__heading {
+    margin-top: 6.5rem;
+    text-align: left;
+  }
+  .faq__content {
+    width: 45rem;
+    margin-left: auto;
+    padding-right: 9.5rem;
+    padding-bottom:1.5rem;
+  }
+
+  .img--mobile {
+    display: none;
+  }
+  .img--desktop {
+    display: block;
+    top: 90px;
+    left: -90px;
+    z-index: 1;
+  }
+
+  .image__container {
+    overflow: hidden;
+
+    height: 600px;
+    width: 1000px; /* it is only important to be bigger then parent for one image width size */
+    margin-top: -17px;
+    /* margin-left:-400px; */
+    position: absolute;
+  }
+
+  .pattern--mobile {
+    display: none;
+  }
+  .pattern--desktop {
+    top: -250px;
+    left: -579px;
+    display: block;
+  }
+  .pattern--box {
+    display: block;
+    top: 240px;
+    left: -100px;
+    z-index: 100;
+  }
 }
