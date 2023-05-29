@@ -171,7 +171,7 @@ body {
 
     height: 600px;
     width: 1000px; /* it is only important to be bigger then parent for one image width size */
-    margin-top: -17px;
+
     /* margin-left:-400px; */
     position: absolute;
   }
