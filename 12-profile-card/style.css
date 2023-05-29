@@ -1,98 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
-  --dark-cyan:hsl(185, 75%, 39%);
-  --very-dark-blue:hsl(229, 23%, 23%);
-  --dark-grayish-blue:hsl(227, 10%, 46%);
-  --dark-gray:hsl(0, 0%, 59%);
-
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
 html {
-  font-size:62.5%;
+  font-size: 62.5%;
 }
 
-
-
- body {
+body {
   font-family: 'Kumbh Sans', sans-serif;
   line-height: 1.5;
-  background:var(--dark-cyan);
+  background: var(--dark-cyan);
   display: grid;
   place-content: center;
   min-height: 100vh;
-  color:var(--very-dark-blue);
+  color: var(--very-dark-blue);
+  overflow-x: hidden;
 }
-
 
 /* Hero */
 .hero__pattern {
   position: absolute;
-  z-index:-1;
+  z-index: -1;
 }
 .pattern--top {
-  top:-50px;
-  left:50px;
-  top:0;
-  left:0;
+  top: -659px;
+  left: -610px;
+}
+.pattern--bottom {
+  top: 300px;
+  right: -740px;
 }
 
 .hero__card {
-  width:36.2rem;
-  background:#fff;
+  width: 32.6rem;
+  background: #fff;
   text-align: center;
   border-radius: 10px;
   position: relative;
-
 }
 .card__background {
-  width:100%;
+  width: 100%;
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 14rem;
 }
 .card__img {
   position: absolute;
   top: 85px;
-  left: 130px;
-
+  left: 120px;
   border-radius: 50%;
-  object-fit: cover;
-  border:5px solid #fff;
+  object-fit: contain;
+  border: 5px solid #fff;
 }
 
 .card__content {
-  margin:5.5rem 0 0.8rem;
-  display:flex;
+  margin: 5.7rem 0 0.8rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .card__heading {
-  font-size:1.8rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-right:0.85rem;
+  margin-right: 0.85rem;
 }
 .card__age {
   font-size: 1.8rem;
-  color:var(--dark-grayish-blue);
+  color: var(--dark-grayish-blue);
 }
 .card__country {
   font-size: 1.4rem;
+  color: var(--dark-grayish-blue);
 }
 
 .card__info {
-  margin-top:4rem;
-  display:flex;
+  margin-top: 2.5rem;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2rem 5rem;
-  border-top:1px solid #d4d4d4;
+  padding: 2rem 5rem;
+  border-top: 1px solid #d4d4d4;
+}
+
+.column__number {
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.column__detail {
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
 }
