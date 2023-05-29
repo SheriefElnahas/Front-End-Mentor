@@ -4,7 +4,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [Website Live URL](https://sherief-elnahas-fem-profile-card.netlify.app//)
+- Live Site URL: [Website Live URL](https://sherief-elnahas-fem-faq-accordion.netlify.app/)
 
 ### Built with
 
