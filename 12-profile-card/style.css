@@ -106,3 +106,20 @@ body {
   letter-spacing: 1.5px;
   font-weight: 400;
 }
+
+@media (min-width: 900px) {
+  .hero__card {
+    width: 35rem;
+  }
+  .card__img {
+    left: 132px;
+  }
+  .pattern--top {
+    top: -482px;
+    left: -250px;
+  }
+  .pattern--bottom {
+    top: 350px;
+    right: -240px;
+  }
+}
