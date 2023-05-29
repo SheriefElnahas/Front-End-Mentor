@@ -2,8 +2,6 @@ const faqAccordions = document.querySelectorAll('.faq__accordion');
 
 faqAccordions.forEach((faqAccordion) => {
   faqAccordion.addEventListener('click', (e) => {
-    console.dir(e.currentTarget);
-    console.log(e.currentTarget.children[2]);
     const angleDownIcon = e.currentTarget.children[0];
     const accordionHeading = e.currentTarget.children[1];
     const accordionContent = e.currentTarget.children[2];
