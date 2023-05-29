@@ -2,33 +2,112 @@
 
 :root {
   /* ## Text ## */
-  --very-dark-blue:hsl(238, 29%, 16%);
+  --very-dark-blue: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
 
   /* ## Gradient ## */
   --soft-violet: hsl(273, 75%, 66%);
-  --soft-blue:hsl(240, 73%, 65%);
+  --soft-blue: hsl(240, 73%, 65%);
 
   /* ## Neutral ## */
   --very-dark-grayish-blue: hsl(237, 12%, 33%);
   --dark-grayish-blue: hsl(240, 6%, 50%);
 
   /* ## Dividers */
-  --light-grayish-blue:hsl(240, 5%, 91%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
 }
 * {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size:62.5%;
+  font-size: 62.5%;
 }
 
 body {
-  background:cyan;
+  background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
   font-size: 1.2rem;
-  font-family: 'Kumbh Sans', sans-serif;
 
+  font-family: 'Kumbh Sans', sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+/* FAQ */
+
+.faq {
+  background: #fff;
+  width: 32.7rem;
+  border-radius: 23px;
+  position: relative;
+  padding: 1rem 2.4rem 4rem;
+
+  margin:20rem 0 10rem;
+}
+
+.faq__img {
+  position: absolute;
+  top: -150px;
+}
+
+.faq__heading {
+  text-align: center;
+  font-size: 3.2rem;
+
+  margin: 10rem 0 3.8rem;
+}
+
+.faq__details {
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.faq__details[open] .details__summary {
+  font-weight: bold;
+}
+.details__summary {
+  font-size: 1.3rem;
+  padding-bottom: 1.2rem;
+}
+
+.faq__accordion {
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-grayish-blue);
+  position: relative;
+}
+
+.fa-solid {
+  position: absolute;
+  color:var(--soft-red);
+  font-weight: bold;
+  font-size:1.5rem;
+  cursor: pointer;
+}
+
+.fa-angle-up {
+  top: 10px;
+  right: 0;
+}
+.fa-angle-down {
+  top: 10px;
+  right: 0;
+  display:none;
+}
+.accordion__heading {
+  font-size: 1.3rem;
+}
+
+.accordion__content {
+  margin:1.3rem 0 0.5rem;
+  width: 90%;
+  color:var(--very-dark-grayish-blue);
+  line-height: 1.8rem;
+  
 }
