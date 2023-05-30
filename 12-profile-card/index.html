@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <meta name="description" content="Front End Mentor Project 12 : Profile Card" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <meta name="description" content="Front End Mentor Project 12 : Profile Card" />
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <title>Frontend Mentor | Profile card component</title>
-  </head>
-  <body>
+  <link rel="stylesheet" href="style.css" />
 
-    <main class="hero">
-      <h1 class="sr-only">Profile Card</h1>
-      <img src="images/bg-pattern-top.svg" class="hero__pattern pattern--top" alt="" />
-      <article class="hero__card">
-        <img src="images/bg-pattern-card.svg" alt="" class="card__background" />
-        <img src="images/image-victor.jpg" alt="vikctor Creset profile image" class="card__img" width="105" height="105" />
-        <div class="card__content">
-          <h2 class="card__heading">Victor Crest</h2>
-          <p class="card__age">26</p>
+  <title>Frontend Mentor | Profile card component</title>
+</head>
+
+<body>
+
+  <main class="hero">
+    <h1 class="sr-only">Profile Card</h1>
+
+    <article class="hero__card">
+      <img src="images/bg-pattern-card.svg" alt="" class="card__background" />
+      <img src="images/image-victor.jpg" alt="vikctor Creset profile image" class="card__img" width="105"
+        height="105" />
+      <div class="card__content">
+        <h2 class="card__heading">Victor Crest</h2>
+        <p class="card__age">26</p>
+      </div>
+      <p class="card__country">London</p>
+      <div class="card__info">
+        <div class="card__column">
+          <h3 class="column__number">80k</h3>
+          <h3 class="column__detail">Followers</h3>
         </div>
-        <p class="card__country">London</p>
-        <div class="card__info">
-          <div class="card__column">
-            <h3 class="column__number">80k</h3>
-            <h3 class="column__detail">Followers</h3>
-          </div>
-          <div class="card__column">
-            <h3 class="column__number">803k</h3>
-            <h3 class="column__detail">Likes</h3>
-          </div>
-          <div class="card__column">
-            <h3 class="column__number">1.4k</h3>
-            <h3 class="column__detail">Photos</h3>
-          </div>
+        <div class="card__column">
+          <h3 class="column__number">803k</h3>
+          <h3 class="column__detail">Likes</h3>
         </div>
-      </article>
-      <img src="images/bg-pattern-bottom.svg" class="hero__pattern pattern--bottom" alt="" />
-    </main>
-  </body>
+        <div class="card__column">
+          <h3 class="column__number">1.4k</h3>
+          <h3 class="column__detail">Photos</h3>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+
 </html>
