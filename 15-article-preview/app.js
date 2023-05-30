@@ -6,5 +6,5 @@ shareIcon.addEventListener('click', () => {
   console.log('hey');
   // toolTip.style.opacity = 1;
   // toolTip.style.animation = 'animate-tooltip 1s linear;'
-  toolTip.classList.add('fadeInFromButtom')
+  toolTip.classList.toggle('fadeInFromButtom')
 })

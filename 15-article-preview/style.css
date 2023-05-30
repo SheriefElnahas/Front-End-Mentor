@@ -157,6 +157,24 @@ img {
   margin-right: 1.6rem;
 }
 
+/* 1877f2 */
+/* 1da1f2 */
+/*  */
+.fa-brands {
+  transition: color 0.1s ease-in;
+}
+.fa-square-facebook:hover {
+
+  color:#1877f2;
+}
+.fa-twitter:hover {
+
+  color:#1da1f2 ;
+}
+
+.fa-pinterest:hover {
+  color:#e60023;
+}
 @keyframes animate-tooltip {
   0% {
     transform: translateY(30px);
