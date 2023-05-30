@@ -100,6 +100,8 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  z-index: 100;
+  position: relative;
 }
 .icon__share:hover {
   background: var(--desaturated-dark-blue);
@@ -119,6 +121,15 @@ img {
   padding: 1.5rem 3rem;
   border-radius: 10px;
   color: #fff;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.2s linear;
+
+}
+
+.fadeInFromButtom {
+  opacity: 1;
+  transform: translateY(0);
 }
 .tooltip::after {
   content: '';
@@ -144,4 +155,14 @@ img {
 
 .tooltip__icon:not(.tooltip__icon:last-of-type) {
   margin-right: 1.6rem;
+}
+
+@keyframes animate-tooltip {
+  0% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
