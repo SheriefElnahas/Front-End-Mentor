@@ -26,7 +26,8 @@ body {
   font-family: 'League Spartan', sans-serif;
   background: var(--White);
   background: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
-  background-position: right -6vw bottom 167vh, left 1vw top 126vh;
+  background-position: right 53vw bottom 59vh, left 31vw top 20vh;
+
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -158,8 +159,11 @@ main {
 }
 
 @media (max-width: 1150px) {
+  body {
+    background-position: right 52vw bottom 95vh, left 13vw top 47vh;
+  }
   main {
-    padding: 8.2rem 2.4rem 9rem;
+    padding: 8.2rem 2.4rem 5rem;
   }
   .hero {
     display: flex;
@@ -203,7 +207,9 @@ main {
   .card:nth-child(3) {
     margin-bottom: 0px;
   }
+}
 
+@media (max-width: 900px) {
   body {
     line-height: 1.5;
     font-size: 1.5rem;
@@ -213,9 +219,6 @@ main {
     background-position: right -6vw bottom 167vh, left 1vw top 126vh;
     background-repeat: no-repeat, no-repeat;
   }
-}
-
-@media (max-width: 900px) {
   main {
     padding: 8.2rem 2.4rem 3rem;
   }
