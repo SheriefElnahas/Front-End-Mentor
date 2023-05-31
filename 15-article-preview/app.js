@@ -1,10 +1,22 @@
-const shareIcon = document.querySelector('#link-share');
-const toolTip = document.querySelector('.tooltip');
+const linkShareDesktop = document.querySelector('.icon__share');
+const toolTipDesktop = document.querySelector('.tooltip--desktop');
+const userElement = document.querySelector('.user');
+
+const footerContent = document.querySelector('.footer__content');
 
 
-shareIcon.addEventListener('click', () => {
-  console.log('hey');
-  // toolTip.style.opacity = 1;
-  // toolTip.style.animation = 'animate-tooltip 1s linear;'
-  toolTip.classList.toggle('fadeInFromButtom')
-})
+
+
+
+linkShareDesktop.addEventListener('click', () => {
+  toolTipDesktop.classList.toggle('fadeInFromButtom');
+
+
+  if (document.documentElement.clientWidth < 850) {
+    userElement.classList.add('hide');
+
+    // footerContent.style.display = 'none';
+    // linkShareDesktop.style.display = 'none';
+    // linkShareDesktop.classList.add('icon__share--mobile')
+  }
+});
