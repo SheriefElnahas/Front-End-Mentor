@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  padding: 8.5rem 3.2rem 7.8rem;
+  padding: 8.5rem 3.2rem 4rem;
 }
 /* Hero */
 .hero {
@@ -64,6 +64,10 @@ main {
 }
 
 /* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .card {
   background: #fff;
   width: 31.1rem;
@@ -98,4 +102,49 @@ main {
 }
 .card__img {
   align-self: flex-end;
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 5rem 3.2rem 0rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 0;
+    justify-content: center;
+    max-width: 1150px;
+    margin-inline: auto;
+  }
+  .card {
+    width: 35rem;
+  }
+  .hero__text {
+    width:60%;
+    max-width:550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    margin-bottom: 15rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .up {
+    transform: translateY(-80px);
+  }
+
+  .card:nth-child(3) {
+    order: 4;
+  }
+  .card:nth-child(4) {
+    order: 3;
+  }
 }
