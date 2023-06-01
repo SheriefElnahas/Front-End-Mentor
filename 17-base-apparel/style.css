@@ -70,6 +70,7 @@ img {
 
 .hero__form {
   position: relative;
+  margin-top:1.5rem;
 }
 
 /* Floating Label */
@@ -96,7 +97,6 @@ img {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
-
 }
 
 .did-floating-input {
@@ -120,31 +120,44 @@ img {
   top: -20px;
   font-size: 13px;
   left: 3px;
-  color:black;
+  color: black;
 }
 
 .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
   top: -20px;
   left: 3px;
   font-size: 13px;
-  color:black;
-
-
+  color: black;
 }
 
 .did-floating-label-content {
   width: 350px;
   position: relative;
-
 }
 .form__arrow {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-
   padding: 1.1rem 2.1rem;
   border-radius: 20px;
   position: absolute;
   top: 0;
   right: 25px;
   cursor: pointer;
+}
 
+.did-floating-input:invalid {
+  border: 2px solid var(--soft-red);
+}
+.error {
+  text-align: left;
+  margin-left: 3.5rem;
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  color: var(--soft-red);
+  visibility: hidden;
+}
+.error__icon {
+  position: absolute;
+  top: 7px;
+  right: 86px;
+  visibility: hidden;
 }
