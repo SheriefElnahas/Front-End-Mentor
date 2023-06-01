@@ -177,14 +177,12 @@ img {
   margin-top: -0.5rem;
 }
 .tooltip__link {
-  color:#fff;
-  
+  color: #fff;
 }
 
 .tooltip__link:not(.tooltip__link:last-of-type) {
   margin-right: 1.6rem;
 }
-
 
 .tooltip__icon {
   font-size: 2rem;
@@ -193,7 +191,6 @@ img {
   z-index: 200;
   position: relative;
 }
-
 
 .fa-brands {
   transition: color 0.1s ease-in;
