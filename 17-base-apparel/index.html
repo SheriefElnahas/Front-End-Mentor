@@ -15,8 +15,6 @@
   <body>
     <main>
       <section class="hero">
-
-        <!-- <img src="images/hero-mobile.jpg" alt="" class="hero__img" /> -->
         <picture>
           <source media="(min-width: 1100px)" srcset="./images/hero-desktop.jpg" class="hero__image--tablet" />
           <img src="images/hero-mobile.jpg" alt="" class="hero__img" />
@@ -27,8 +25,8 @@
           <p class="hero__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
           <form class="hero__form">
             <div class="did-floating-label-content">
-              <input class="did-floating-input form__input" type="email" placeholder=" " />
-              <label class="did-floating-label">Email Address</label>
+              <input class="did-floating-input form__input" type="email" placeholder=" " name="email" required aria-required="true" aria-label="Email Address" />
+              <label class="did-floating-label">Email Address*</label>
               <img src="images/icon-arrow.svg" class="form__arrow" alt="" />
               <img src="images/icon-error.svg" alt="" class="error__icon" />
               <p class="error">Please provide a valid email</p>
