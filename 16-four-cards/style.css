@@ -45,6 +45,7 @@ main {
   font-size: 2.4rem;
   letter-spacing: 0.17px;
   font-weight: 200;
+  color:hsl(232deg 3.91% 58.37%);
 }
 
 .hero__heading {
@@ -128,6 +129,16 @@ main {
 @media (min-width: 1200px) {
   .hero {
     margin-bottom: 15rem;
+  }
+  .hero__subheading {
+    font-size: 3.6rem;
+    font-weight: lighter;
+  }
+  .hero__heading {
+    margin:2.5rem 0 2.5rem;
+  }
+  .hero {
+    margin-top:4rem;
   }
   .cards {
     display: flex;
