@@ -10,8 +10,8 @@
   /* ## Neutral ## */
 
   --very-dark-blue: hsl(234, 12%, 34%);
-  --grayish-blue: hsl(229, 6%, 66%);
-  --very-light-gray: hsl(0, 0%, 98%);
+  --grayish-blue: #71737F;
+  --very-light-gray: #fafafa;
 }
 * {
   padding: 0;
@@ -50,7 +50,7 @@ main {
 .hero__heading {
   font-size: clamp(2.4rem, 1.5rem + 2vw, 3.6rem);
   margin-bottom: 1.3rem;
-  margin: 1.2rem 0 1.6rem;
+  margin: 1.6rem 0 1.6rem;
 }
 
 .hero__text {
@@ -60,7 +60,7 @@ main {
   font-weight: 400;
   letter-spacing: 0.1px;
   line-height: 2.4rem;
-  color: hsl(229, 11%, 51%);
+  color: #6B7085;
 }
 
 /* Cards */
@@ -120,8 +120,8 @@ main {
     width: 35rem;
   }
   .hero__text {
-    width:60%;
-    max-width:550px;
+    width: 60%;
+    max-width: 550px;
   }
 }
 
