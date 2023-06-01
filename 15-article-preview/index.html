@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Front End Mentor Project 15 : Article Preview " />
+
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <script src="https://kit.fontawesome.com/75016b0d3c.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Article preview component</title>
@@ -12,7 +15,7 @@
   <body>
     <main>
       <article class="article">
-        <img src="images/drawers.jpg" alt="" class="article__img" />
+        <img src="images/drawers.jpg" alt="" class="article__img" width="285" height="296" />
         <div class="article__content">
           <h1 class="article__heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
           <p class="article__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
@@ -22,17 +25,18 @@
                 <img src="images/avatar-michelle.jpg" alt="" class="user__img" />
                 <div class="user__content">
                   <h2 class="user__name">Michelle Appleton</h2>
-                  <time class="user__date"> 28 Jun 2020</time>
+
+                  <time class="user__date" datetime="2020-06-28T12:00:00">28 Jun 2020</time>
                 </div>
               </div>
-              <a href="#" class="link__share link__share--desktop"> <i class="fa-solid fa-share icon__share"></i></a>
+              <a href="#" class="link__share"> <i class="fa-solid fa-share icon__share"></i></a>
             </div>
 
-            <div class="tooltip tooltip--desktop">
+            <div id="tooltip" class="tooltip">
               <p class="tooltip__text">Share</p>
-              <i class="fa-brands fa-square-facebook tooltip__icon"></i>
-              <i class="fa-brands fa-twitter tooltip__icon"></i>
-              <i class="fa-brands fa-pinterest tooltip__icon"></i>
+              <a href="#" class="tooltip__link" aria-label="Facebook" role="button" tabindex="0"><i class="fa-brands fa-square-facebook tooltip__icon"></i></a>
+              <a href="#" class="tooltip__link" aria-label="Twitter" role="button" tabindex="0"><i class="fa-brands fa-twitter tooltip__icon"></i></a>
+              <a href="#" class="tooltip__link" aria-label="Pinterest" role="button" tabindex="0"><i class="fa-brands fa-pinterest tooltip__icon"></i></a>
             </div>
           </footer>
         </div>
