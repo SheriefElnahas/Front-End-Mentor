@@ -28,5 +28,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
-  background:url('./images/bg-intro-desktop.png')
+  background: var(--red) url('./images/bg-intro-desktop.png') no-repeat center center fixed;
+  background-size: cover;
 }
