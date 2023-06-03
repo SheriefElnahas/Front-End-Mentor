@@ -31,3 +31,109 @@ body {
   background: var(--red) url('./images/bg-intro-desktop.png') no-repeat center center fixed;
   background-size: cover;
 }
+
+main {
+  color: #fff;
+  padding: 8.8rem 2.4rem 6.8rem;
+}
+
+/* Hero */
+.hero__heading {
+  font-size: clamp(2.8rem, 2rem + 2vw, 5rem);
+  line-height: 3.6rem;
+  letter-spacing: -0.29px;
+  font-weight: 700;
+  text-align: center;
+  width: 70%;
+  margin-inline: auto;
+  margin-bottom: 1.6rem;
+}
+.hero__text {
+  padding: 0 2rem;
+  text-align: center;
+}
+.hero__content {
+  margin-bottom: 6.4rem;
+}
+
+.hero__offer {
+  text-align: center;
+  background: var(--blue);
+  padding: 1.5rem 12rem;
+  border-radius: 10px;
+  margin-bottom: 2.4rem;
+  line-height: 2.6rem;
+  max-width: 800px;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.hero__form {
+  background: #fff;
+  padding: 3.5rem 2.4rem 2.4rem;
+  border-radius: 10px;
+  color: var(--dark-blue);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+.form-floating > .form-control {
+  height: calc(3.5rem + 10px);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0.5rem;
+}
+.form-floating > label {
+  text-transform: capitalize;
+  top: 2px;
+  left: 6px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.25px;
+  color: var(--dark-blue);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-4rem) translateX(-0.6rem);
+  z-index: 1;
+}
+
+.form__button {
+  background: var(--green);
+  color: #fff;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  width: 100%;
+  letter-spacing: 1px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.form__terms {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  color: var(--grayish-blue);
+  width: 70%;
+  margin-inline: auto;
+}
+.highlight--terms {
+  color: var(--red);
+  font-weight: bold;
+}
