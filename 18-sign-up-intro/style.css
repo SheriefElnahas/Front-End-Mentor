@@ -3,7 +3,7 @@
 :root {
   /* ## Primary ## */
   --red: hsl(0, 100%, 74%);
-  --green: hsl(154, 59%, 51%);
+  --green: rgb(56, 204, 140);
 
   /* ## Accent  ## */
 
@@ -12,7 +12,7 @@
   /* ## Neutral ## */
 
   --dark-blue: hsl(249, 10%, 26%);
-  --grayish-blue: hsl(246, 25%, 77%);
+  --grayish-blue: #796EA6;
 }
 
 * {
