@@ -98,7 +98,7 @@ main {
 .form-floating > label {
   text-transform: capitalize;
   top: 2px;
-  left: 6px;
+  left: 10px;
   font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 0.25px;
@@ -109,8 +109,17 @@ main {
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.65;
-  transform: scale(0.85) translateY(-4rem) translateX(-0.6rem);
+  transform: scale(0.85) translateY(-4rem) translateX(-1.5rem);
   z-index: 1;
+}
+
+.form__error {
+  font-size: 1.1rem;
+  color:var(--red);
+  font-style: italic;
+  text-align: right;
+  margin-top:6px;
+  visibility: hidden;
 }
 
 .form__button {
@@ -125,7 +134,6 @@ main {
   margin-left: 0.5rem;
   width: 100%;
   letter-spacing: 1px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   margin-bottom: 1.5rem;
@@ -155,22 +163,22 @@ main {
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-
     padding-right: 10rem;
   }
-
 
   .hero__heading {
     width: 60%;
     text-align: left;
-    margin-bottom:2rem;
-
+    margin-bottom: 2rem;
+    margin-left:6.5rem;
   }
   .hero__text {
-    width: 60%;
+    width: 80%;
     margin-inline: auto;
     text-align: left;
-    padding:0 3rem 0 0;
+    padding: 0 3rem 0 0;
   }
-
+  .form__terms {
+    width:100%;
+  }
 }
