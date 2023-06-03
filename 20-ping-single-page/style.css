@@ -22,3 +22,8 @@ html {
 body {
   background: #fff;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
