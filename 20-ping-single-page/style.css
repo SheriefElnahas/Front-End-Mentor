@@ -21,9 +21,131 @@ html {
 
 body {
   background: #fff;
+  font-family: 'Libre Franklin', sans-serif;
 }
 img {
   max-width: 100%;
   height: auto;
-  display:block;
+  display: block;
+}
+
+main {
+  padding: 0 3.7rem 3.7rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+.hero__heading {
+  font-size: clamp(2rem, 1rem + 2vw, 3.2rem);
+  margin: 8.1rem 0 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--very-dark-blue);
+}
+
+.hero__subheading {
+  font-size: clamp(2.2rem, 2rem + 2vw, 4.8rem);
+  color: var(--gray);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--very-dark-blue);
+}
+
+.hero__text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.hero__input {
+  width:100%;
+  max-width:28rem;
+  height:4rem;
+  padding:1rem 3rem;
+  border-radius: 25px;
+  margin:3.2rem 0 1rem;
+  border:1px solid var(--pale-blue);
+
+}
+.hero__input::placeholder {
+  color:var(--pale-blue);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.input__error {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.13px;
+  color:var(--light-red);
+  margin-top:-7px;
+  margin-bottom:1rem;
+  visibility: hidden;
+}
+
+.hero__button {
+  width:100%;
+  max-width:28rem;
+  border:none;
+  background:var(--blue);
+  color:#fff;
+  padding:1.3rem 2rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+.hero__button:hover {
+  background:hsl(223, 87%, 53%);
+}
+
+.hero__img {
+  width:32rem;
+  height:19.2rem;
+  object-fit: cover;
+  margin-inline: auto;
+}
+
+.hero__footer {
+  margin-top:12rem;
+
+}
+.footer__list {
+
+  list-style: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:4rem;
+}
+
+.footer__item {
+  margin-right:1.2rem;
+}
+.footer__icon {
+  font-size: 1.4rem;
+  color:var(--blue);
+  border:1px solid var(--pale-blue);
+  padding: 0.7rem 1.2rem;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.footer__icon:hover {
+  color:#fff;
+  background:var(--blue);
+  border:1px solid #fff;
+}
+.footer__text {
+  font-size: 1rem;
+  color:var(--gray);
 }
