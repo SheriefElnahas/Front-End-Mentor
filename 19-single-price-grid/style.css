@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 :root {
@@ -23,7 +22,107 @@ body {
   font-family: 'Karla', sans-serif;
   line-height: 2.6rem;
   letter-spacing: -0.17px;
-  background:var(--grayish-blue);
+  background: var(--light-gray);
 }
 
+main {
+  padding: 7.2rem 3.2rem 6.2rem;
 
+}
+
+/* Hero */
+main > * {
+  padding: 2.4rem;
+  max-width: 500px;
+  margin-inline:auto;
+
+}
+.hero {
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.hero__heading {
+  font-size: 2rem;
+  letter-spacing: -0.25px;
+  margin-bottom: 2.4rem;
+  color: var(--cyan);
+}
+
+.hero__subheading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.19px;
+  color: var(--bright-yellow);
+}
+
+.hero__text {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.17px;
+  color: var(--grayish-blue);
+  margin-top: 1.6rem;
+  width:90%;
+}
+
+/* Money */
+.money {
+  background: var(--cyan);
+  color: #fff;
+}
+
+.money__heading {
+  font-size: 1.8rem;
+  letter-spacing: -0.22px;
+  margin-bottom: 1.8rem;
+}
+.money__price {
+  font-weight: bold;
+  font-size: 3.2rem;
+  letter-spacing: -0.4px;
+}
+
+.money__small {
+  font-size: 1.6rem;
+  letter-spacing: -0.2px;
+  color: var(--light-gray);
+  font-weight: 400;
+  margin-left: 1rem;
+}
+.money__button {
+  width: 100%;
+  padding: 1.3rem;
+  cursor: pointer;
+  margin-top: 2.6rem;
+  border: none;
+  color: #fff;
+  background: var(--bright-yellow);
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: inherit;
+  letter-spacing: -0.2px;
+  border-radius: 5px;
+
+}
+
+/* Why section */
+.why {
+  background:hsl(179, 62%, 48%);
+  color:#fff;
+}
+.why__heading {
+  margin-bottom:1.8rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.22px;
+}
+
+.why__list {
+  padding:0;
+  list-style: none;
+}
+.why__item {
+  color:var(--light-gray);
+  font-size: 1.4rem;
+}
