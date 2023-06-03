@@ -27,21 +27,19 @@ body {
 
 main {
   padding: 7.2rem 3.2rem 6.2rem;
-
 }
+
 
 /* Hero */
 main > * {
   padding: 2.4rem;
   max-width: 500px;
-  margin-inline:auto;
-
+  margin-inline: auto;
 }
 .hero {
   background: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-
 }
 
 .hero__heading {
@@ -64,7 +62,7 @@ main > * {
   letter-spacing: -0.17px;
   color: var(--grayish-blue);
   margin-top: 1.6rem;
-  width:90%;
+  width: 90%;
 }
 
 /* Money */
@@ -91,6 +89,9 @@ main > * {
   font-weight: 400;
   margin-left: 1rem;
 }
+.money__text {
+  margin-top:1rem;
+}
 .money__button {
   width: 100%;
   padding: 1.3rem;
@@ -104,25 +105,77 @@ main > * {
   font-family: inherit;
   letter-spacing: -0.2px;
   border-radius: 5px;
-
 }
 
 /* Why section */
 .why {
-  background:hsl(179, 62%, 48%);
-  color:#fff;
+  background: hsl(179, 62%, 48%);
+  color: #fff;
 }
 .why__heading {
-  margin-bottom:1.8rem;
+  margin-bottom: 1.8rem;
   font-size: 1.8rem;
   letter-spacing: -0.22px;
 }
 
 .why__list {
-  padding:0;
+  padding: 0;
   list-style: none;
 }
 .why__item {
-  color:var(--light-gray);
+  color: var(--light-gray);
   font-size: 1.4rem;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'hero hero hero hero'
+      'money money why why';
+    min-height: 100vh;
+    place-content: center;
+    max-width: 63.5rem;
+    margin-inline: auto;
+  }
+  main > * {
+    padding: 4rem;
+    margin-inline: 0;
+  }
+
+  .hero {
+    grid-area: hero;
+    max-width: 63.5rem;
+  }
+  .hero__heading {
+    font-size: 2rem;
+
+  }
+
+  .hero__subheading {
+    font-size: 1.8rem;
+  }
+
+  .hero__text {
+    margin-top:1rem;
+    width:100%;
+  }
+  .money {
+    grid-area: money;
+    max-width: 100%;
+    border-bottom-left-radius: 5px;
+  }
+
+  .why {
+    grid-area: why;
+    max-width: 100%;
+    border-bottom-right-radius: 5px;
+  }
+  .why__item {
+    padding:0;
+    margin:0;
+    margin-bottom:-5px;
+  }
 }
